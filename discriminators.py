@@ -521,7 +521,7 @@ class DiscriminatorCQT(nn.Module):
             ((kernel_size[1] - 1) * dilation[1]) // 2,
         )
 
-    def forward(self, x: torch.tensor) -> Tuple[torch.Tensor, List[torch.Tensor]]:
+    def forward(self, x: torch.Tensor) -> Tuple[torch.Tensor, List[torch.Tensor]]:
         fmap = []
 
         if self.cqtd_normalize_volume:
